@@ -19,5 +19,6 @@ static void Main( string[] args )
 }
 // end example
 
+
 With traditional use of AutoItX3 we need to pass arguements every time we call a method.
 However, we are able to act upon the target window until another window Title / HWND is explicity passed to a method.
