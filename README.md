@@ -9,7 +9,7 @@ static void Main( string[] args )
     {
         RunWait( "notepad.exe", "C:\\Windows\\system32\\" );
     }
-    WinActivate();
+     WinActivate();
     WinWaitActive();
     WinSetOnTop();
     WinClose();
