@@ -3,7 +3,6 @@
 AutoItCHarpWrapper's goal is to increase universal functionality and easy of use in C# while using AutoItX3Lib. 
 
 // example:
-
 static void Main( string[] args )
 {
     if ( !WinExist( "Untitled - Notepad" ) )
