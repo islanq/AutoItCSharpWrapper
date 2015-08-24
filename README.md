@@ -5,22 +5,24 @@ AutoItCHarpWrapper's goal is to increase universal functionality and easy of use
 // example:
 static void Main( string[] args )
 {
-	if ( !WinExist( "Untitled - Notepad" ) )
-	{
+
+        if ( !WinExist( "Untitled - Notepad" ) )
+    
+        {
         
-		RunWait( "notepad.exe", "C:\\Windows\\system32\\" );
+             RunWait( "notepad.exe", "C:\\Windows\\system32\\" );
     
 	}
-   
-	WinActivate();
 
-	WinWaitActive();
+        WinActivate();
 
-	WinSetOnTop();
-	WinClose();
+        WinWaitActive();
+        WinSetOnTop();
+        WinClose();
 	
 	Console.WriteLine( "Last Window: {0}", LastWindow );
 	Console.ReadLine();
+
 }
 // end example
 
