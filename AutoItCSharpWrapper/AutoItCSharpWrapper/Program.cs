@@ -8,13 +8,13 @@ using AutoItX3Lib;
 
 namespace AutoItCSharpWrapper
 {
-    public class AU3
+    public class Au3
     {
         public static AutoItX3Lib.AutoItX3 au3;
 
         private static string _lastWindow = "";
 
-        static AU3()
+        static Au3()
         {
             au3 = new AutoItX3Lib.AutoItX3();
         }
@@ -449,7 +449,7 @@ namespace AutoItCSharpWrapper
             Thread.Sleep( ms );
         }
     }
-    class Program : AU3
+    class Program : Au3
     {
         static void Main( string[] args )
         {
