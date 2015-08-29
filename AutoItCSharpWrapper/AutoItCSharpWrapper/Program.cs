@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Threading;
 using AutoItX3Lib;
 
@@ -12,17 +8,15 @@ namespace AutoItCSharpWrapper
     {
         public static AutoItX3Lib.AutoItX3 au3;
 
-        private static string _lastWindow = "";
+        /// <summary>
+        ///     Store the last window handle
+        /// </summary>
+        public static string LastWindow { get; set; }
 
         static Au3()
         {
             au3 = new AutoItX3Lib.AutoItX3();
-        }
-
-        public static string LastWindow
-        {
-            get { return _lastWindow; }
-            set { _lastWindow = value; }
+            LastWindow = "";
         }
 
         #region WindowTools
@@ -449,6 +443,7 @@ namespace AutoItCSharpWrapper
             Thread.Sleep( ms );
         }
     }
+
     class Program : Au3
     {
         static void Main( string[] args )
